@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+
+/************************* START STICKY FOOTER ***************************/
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.site-content {
+	flex: 1;
+}
+/******************************* END STICKY FOOTER **********************/
+
+
+
+/**************************** START SLIDER STYLING **********************/
+/******* https://kenwheeler.github.io/slick/ *******/
+
+
+.slick-prev:before {
+  content: "\f0a8";
+  font-family: "FontAwesome";
+  color: #d8b5ff;
+  font-size: 26px;
+}
+
+.slick-next:before {
+  content: "\f0a9";
+  font-family: "FontAwesome";
+  color: #d8b5ff;
+  font-size: 26px;
+}
+
+.slick-prev {
+  left: 20px;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 20px;
+  z-index: 1;
+}
+
+/**************************** END SLIDER STYLING **********************/
