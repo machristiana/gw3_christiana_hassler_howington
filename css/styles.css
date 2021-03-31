@@ -71,6 +71,7 @@ img {
 
 .header-container {
 	text-align: center;
+	padding: 30px 0;
 }
 
 .logo {
@@ -147,7 +148,6 @@ header h2 {
   text-decoration: none;
   font-weight: 300;
   font-size: 1.5rem;
-  color: #fcf1e7;
   padding: 24px;
   width: 233px;
   text-align: right;
@@ -189,27 +189,16 @@ header h2 {
 	height: 2px;
 }
 
-.menu-name {
-	font-family: Verdana;
-	font-weight: 900;
-	color: black;
-	font-size: 19.5px;
-	text-decoration: none;
-	position: absolute;
-	top: 56px;
-	left: -1px;
-	transition: all 350ms;
-}
-
-.menu-open .menu-name {
-	top: 64px;
-	color: red;
-}
-
-.responsive-box {
-	background-color: #ddd;
-	margin: 2%;
-	float: left;
-}
-
 /*********************** END HAMBURGER MENU STYLING **********************/
+
+article h2, article p {
+	padding: 0 10px;
+}
+
+article {
+	padding: 20px 0;
+}
+
+article img {
+	padding: 5px 0;
+}
