@@ -30,15 +30,15 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .slick-prev:before {
   content: "\f0a8";
   font-family: "FontAwesome";
-  color: #d8b5ff;
-  font-size: 26px;
+  color: white;
+  font-size: 40px;
 }
 
 .slick-next:before {
   content: "\f0a9";
   font-family: "FontAwesome";
-  color: #d8b5ff;
-  font-size: 26px;
+  color: white;
+  font-size: 40px;
 }
 
 .slick-prev {
@@ -47,7 +47,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 .slick-next {
-  right: 20px;
+  right: 35px;
   z-index: 1;
 }
 
