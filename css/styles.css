@@ -202,3 +202,46 @@ article {
 article img {
 	padding: 5px 0;
 }
+
+.home-article2 img {
+	max-width: 1756px;
+}
+
+.home-article3 img {
+	max-width: 1756px;
+}
+
+.home-flowers-container {
+	position: relative;
+  text-align: center;
+  color: #3e3d3d;
+	font-weight: 700;
+	padding-bottom: 0!important;
+}
+
+.home-flowers {
+	opacity: .5;
+	padding-bottom: 0!important;
+	margin-bottom: -5px;
+}
+
+.home-flowers-text {
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+}
+
+.home-flowers-text-top {
+	font-size: 1.6rem;
+	padding-bottom: 15px;
+}
+
+.home-flowers-text-bottom {
+	font-size: 1rem;
+}
+
+footer {
+	display: none;
+}
