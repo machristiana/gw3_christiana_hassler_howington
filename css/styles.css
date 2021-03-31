@@ -8,12 +8,25 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+body {
+	background-color: #f0ece8;
+	color: #3e3d3d;
+	font-family: linotype-didot, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+img {
+	width: 100%;
+}
 
 /************************* START STICKY FOOTER ***************************/
 .site {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	margin: 5%;
+	border: #3e3d3d 1px solid;
 }
 
 .site-content {
