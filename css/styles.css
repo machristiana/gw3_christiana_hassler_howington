@@ -210,7 +210,6 @@ article h2, article p {
 article h2 {
 	font-size: 1.5rem;
 	font-family: 'Averia Serif Libre', cursive;
-	text-transform: uppercase;
 }
 
 article {
@@ -410,3 +409,15 @@ footer {
 	}
 }
 /************************************* END 750PX MEDIA QUERY *************************************/
+/************************************* START 950PX MEDIA QUERY *************************************/
+@media (min-width: 950px) {
+	.home-flowers-text-top {
+		font-size: 4rem;
+	}
+
+	.home-flowers-text-bottom {
+		font-size: 2.8rem;
+		padding-top: 30px;
+	}
+}
+/************************************* END 950PX MEDIA QUERY *************************************/
