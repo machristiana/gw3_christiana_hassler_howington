@@ -11,7 +11,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 body {
 	background-color: #f0ece8;
 	color: #3e3d3d;
-	font-family: linotype-didot, serif;
+	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
@@ -133,10 +133,10 @@ header h2 {
   border: none;
 }
 
-.top, .middle {
+.top, .middle, .bottom {
 	position: absolute;
 	width: 62px;
-	height: 2px;
+	height: 4px;
 	background-color: #3e3d3d;
 	transition: all 350ms ease-in-out;
 	top: 20px;
@@ -144,6 +144,14 @@ header h2 {
 
 .middle {
   top: 35px;
+}
+
+.bottom {
+  top: 50px;
+}
+
+.bottom a:click {
+  display: none;
 }
 
 #menu {
@@ -159,12 +167,13 @@ header h2 {
   padding: 24px;
   width: 233px;
   text-align: right;
+	font-family: 'Averia Serif Libre', cursive;
 }
 
 #menu li {
 	text-decoration: none!important;
-	padding-bottom: 10px;
-	margin-bottom: 12px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
 	border-bottom: 1px solid #fcf1e7;
 	list-style: none;
 	color: #f0ece8;
@@ -210,7 +219,6 @@ article h2, article p {
 article h2 {
 	font-size: 1.5rem;
 	font-family: 'Averia Serif Libre', cursive;
-	text-transform: uppercase;
 }
 
 article {
@@ -223,6 +231,7 @@ article img {
 
 article p {
 	font-size: 1rem;
+	line-height: 1.4rem;
 }
 
 .ladies-gents-link {
@@ -270,6 +279,9 @@ article p {
 }
 
 .home-flowers-text {
+	font-family: linotype-didot, serif;
+	font-weight: 700;
+	font-style: normal;
 	position: absolute;
 	top: 54%;
 	left: 50%;
@@ -280,6 +292,7 @@ article p {
 .home-flowers-text-top {
 	font-size: 1.6rem;
 	padding-bottom: 15px;
+	line-height: 2rem;
 }
 
 .home-flowers-text-bottom {
@@ -306,6 +319,9 @@ footer {
 
 	.home-flowers-text-top {
 		font-size: 2rem;
+		line-height: 2.4rem;
+		padding-bottom: 30px;
+
 	}
 
 	.home-flowers-text-bottom {
@@ -403,6 +419,8 @@ footer {
 
 	.home-flowers-text-top {
 		font-size: 3rem;
+		line-height: 3.6rem;
+		padding-bottom: 50px;
 	}
 
 	.home-flowers-text-bottom {
@@ -410,3 +428,21 @@ footer {
 	}
 }
 /************************************* END 750PX MEDIA QUERY *************************************/
+/************************************* START 1000PX MEDIA QUERY *************************************/
+@media (min-width: 1000px) {
+	.home-flowers-text-top {
+		font-size: 4rem;
+	}
+
+	.home-flowers-text-bottom {
+		font-size: 2.8rem;
+		padding-top: 30px;
+	}
+
+	body {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+}
+/************************************* END 1000PX MEDIA QUERY *************************************/
