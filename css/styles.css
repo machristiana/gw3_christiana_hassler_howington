@@ -293,7 +293,7 @@ footer {
 /************************************* START 500PX MEDIA QUERY *************************************/
 @media (min-width: 500px) {
 	.home-flowers-text {
-		width: 70%;
+		width: 80%;
 	}
 
 	header h1 {
@@ -372,9 +372,24 @@ footer {
 		font-size: 2.7rem;
 	}
 
+	.home-article1 h2 {
+		font-size: 3.1rem;
+	}
+
+	.home-article1 {
+		max-width: 700px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	article h2 {
+		font-size: 2rem;
+	}
+
 	.home-article2, .home-article3 {
 		display: flex;
 		align-items: center;
+		padding: 70px 0;
 	}
 
 	.home-article2{
@@ -387,7 +402,7 @@ footer {
 	}
 
 	.home-flowers-text-top {
-		font-size: 2.8rem;
+		font-size: 3rem;
 	}
 
 	.home-flowers-text-bottom {
