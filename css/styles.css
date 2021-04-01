@@ -133,10 +133,10 @@ header h2 {
   border: none;
 }
 
-.top, .middle {
+.top, .middle, .bottom {
 	position: absolute;
 	width: 62px;
-	height: 2px;
+	height: 4px;
 	background-color: #3e3d3d;
 	transition: all 350ms ease-in-out;
 	top: 20px;
@@ -144,6 +144,14 @@ header h2 {
 
 .middle {
   top: 35px;
+}
+
+.bottom {
+  top: 50px;
+}
+
+.bottom a:click {
+  display: none;
 }
 
 #menu {
