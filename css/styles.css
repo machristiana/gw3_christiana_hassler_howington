@@ -8,12 +8,25 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+body {
+	background-color: #f0ece8;
+	color: #3e3d3d;
+	font-family: linotype-didot, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+img {
+	width: 100%;
+}
 
 /************************* START STICKY FOOTER ***************************/
 .site {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	margin: 25px;
+	border: #3e3d3d 1px solid;
 }
 
 .site-content {
@@ -52,3 +65,348 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 /**************************** END SLIDER STYLING **********************/
+.desktop-nav {
+	display: none;
+}
+
+.header-container {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.logo {
+	width: 100px;
+	padding: 16px 0 5px;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 2rem;
+	font-family: 'Averia Serif Libre', cursive;
+	font-weight: 700;
+	font-style: italic;
+}
+
+header h2 {
+	padding-top: 5px;
+	text-align: center;
+	font-size: 1.8rem;
+	font-family: 'Averia Serif Libre', cursive;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/*********************** START HAMBURGER MENU STYLING **********************/
+.bg-cover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #292324;
+  z-index: 0;
+  transition: all 350ms ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.reveal {
+  opacity: .85;
+  display: block;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.hamburger-shell {
+  margin: 0;
+  position: fixed;
+  overflow: hidden;
+  width: 52px;
+  height: 100px;
+  overflow: auto;
+  left: calc(100% - 90px);
+  top: 20px;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.top, .middle {
+	position: absolute;
+	width: 62px;
+	height: 2px;
+	background-color: #3e3d3d;
+	transition: all 350ms ease-in-out;
+	top: 20px;
+}
+
+.middle {
+  top: 35px;
+}
+
+#menu {
+  position: fixed;
+  left: calc(100% - 292px);
+  top: 10px;
+  color: #fcf1e7;
+  display: none;
+  margin: 120px 30px;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 24px;
+  width: 233px;
+  text-align: right;
+}
+
+#menu li {
+	text-decoration: none!important;
+	padding-bottom: 10px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #fcf1e7;
+	list-style: none;
+	color: #f0ece8;
+	transition: all 150ms ease;
+}
+
+#menu li:hover {
+	color: #fff;
+	padding-right: 3px;
+}
+
+#menu a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu-open .top {
+	transform: rotate(225deg);
+	-webkit-transform: rotate(225deg);
+	top: 30px;
+	background-color: #f0ece8;
+	height: 2px;
+}
+
+.menu-open .middle {
+	transform: rotate(-225deg);
+	-webkit-transform: rotate(-225deg);
+	top: 30px;
+	background-color: #f0ece8;
+	height: 2px;
+}
+
+/*********************** END HAMBURGER MENU STYLING **********************/
+
+.home-article1 h2 {
+	font-size: 1.8rem;
+}
+
+article h2, article p {
+	padding: 0 10px 5px;
+}
+
+article h2 {
+	font-size: 1.5rem;
+	font-family: 'Averia Serif Libre', cursive;
+	text-transform: uppercase;
+}
+
+article {
+	padding: 20px 0;
+}
+
+article img {
+	padding: 5px 0;
+}
+
+article p {
+	font-size: 1rem;
+}
+
+.ladies-gents-link {
+	display: inline-block;
+	padding-top: 4px;
+	margin-left: 5%;
+	margin-top: 10px;
+	text-align: center;
+	border-top: 2px solid #3e3d3d;
+	border-bottom: 2px solid #3e3d3d;
+	font-family: 'Averia Serif Libre', cursive;
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+.ladies-gents-link a {
+	text-decoration: none;
+	color: #3e3d3d;
+}
+
+.ladies-gents-link a:hover{
+	color: black;
+}
+
+.home-article2 img {
+	max-width: 1756px;
+}
+
+.home-article3 img {
+	max-width: 1756px;
+}
+
+.home-flowers-container {
+	position: relative;
+  text-align: center;
+  color: #3e3d3d;
+	font-weight: 700;
+	padding-bottom: 0!important;
+}
+
+.home-flowers {
+	opacity: .5;
+	padding-bottom: 0!important;
+	margin-bottom: -5px;
+}
+
+.home-flowers-text {
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+}
+
+.home-flowers-text-top {
+	font-size: 1.6rem;
+	padding-bottom: 15px;
+}
+
+.home-flowers-text-bottom {
+	font-size: 1rem;
+}
+
+footer {
+	display: none;
+}
+
+/************************************* START 500PX MEDIA QUERY *************************************/
+@media (min-width: 500px) {
+	.home-flowers-text {
+		width: 80%;
+	}
+
+	header h1 {
+		font-size: 2.4rem;
+	}
+
+	header h2 {
+		font-size: 2rem;
+	}
+
+	.home-flowers-text-top {
+		font-size: 2rem;
+	}
+
+	.home-flowers-text-bottom {
+    font-size: 1.3rem;
+	}
+}
+/************************************* END 500PX MEDIA QUERY *************************************/
+/************************************* START 750PX MEDIA QUERY *************************************/
+@media (min-width: 750px) {
+	.site {
+		margin: 45px;
+	}
+
+	.logo {
+    width: 160px;
+    padding: 16px 0 16px;
+	}
+
+	.hamburger-shell {
+	display: none;
+	}
+
+	.desktop-nav {
+		display: block;
+		text-align: center;
+		border-top: 1px solid #3e3d3d;
+		border-bottom: 1px solid #3e3d3d;
+		padding: 20px 0;
+		margin-bottom: 30px;
+	}
+
+	.desktop-nav ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.desktop-nav ul li {
+		display: inline-block;
+		font-size: 1.5rem;
+		font-family: 'Averia Serif Libre', cursive;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.desktop-nav ul li a {
+		text-decoration: none;
+		color: #3e3d3d;
+	}
+
+	.desktop-nav ul li a:hover {
+		color: black;
+	}
+
+	.article-text {
+		flex:1;
+		padding: 0 5px;
+	}
+
+	header h1 {
+		font-size: 2.8rem;
+	}
+
+	header h2 {
+		font-size: 2.7rem;
+	}
+
+	.home-article1 h2 {
+		font-size: 3.1rem;
+	}
+
+	.home-article1 {
+		max-width: 700px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	article h2 {
+		font-size: 2rem;
+	}
+
+	.home-article2, .home-article3 {
+		display: flex;
+		align-items: center;
+		padding: 70px 0;
+	}
+
+	.home-article2{
+		flex-direction: row-reverse;
+	}
+
+	.home-article2 img, .home-article3 img{
+		width: 50%;
+		flex: 1;
+	}
+
+	.home-flowers-text-top {
+		font-size: 3rem;
+	}
+
+	.home-flowers-text-bottom {
+		font-size: 1.8rem;
+	}
+}
+/************************************* END 750PX MEDIA QUERY *************************************/

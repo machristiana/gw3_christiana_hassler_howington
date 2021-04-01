@@ -17,75 +17,119 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- Adobe Font -->
+		<link rel="stylesheet" href="https://use.typekit.net/toy1tcj.css">
+
+		<!-- Google Fonts  -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 
 	</head>
 
-	<body class="site">
-		<header>
-			<a href="index.html"><img src="images/bridgerton_logo.png" alt="Lady Whisteldown's Society Papers Logo" width="150"/></a>
-			<h1>Lady Whisteldown's</h1>
-			<h2>Society Papers</h2>
+	<body>
+		<div class="site">
+			<header>
 
-			<nav class="desktop-nav">
+<!-- HAMBURGER MENU -->
+				<div class="bg-cover"></div>
+				<div role="button" class="hamburger-shell" aria-expanded="false">
+					<div class="top"></div>
+					<div class="middle"></div>
+				</div>
+
+				<nav class="menu" id="menu">
+					<ul>
+						<li><a href="ladies.html">Extraordinary Ladies</a></li>
+						<li><a href="gents.html">Extraordinary Gents</a></li>
+					</ul>
+				</nav>
+<!-- HAMBURGER MENU -->
+
+				<div class="header-container">
+					<a href="index.html"><img class="logo" src="images/bridgerton_logo.png" alt="Lady Whisteldown's Society Papers Logo"/></a>
+					<h1>Lady Whisteldown's</h1>
+					<h2>Society Papers</h2>
+				</div>
+
+				<nav class="desktop-nav">
+					<ul>
+						<li><a href="ladies.html">Extraordinary Ladies</a></li>
+						<li><a href="gents.html">Extraordinary Gents</a></li>
+					</ul>
+				</nav>
+
+			</header>
+
+			<main class="container site-content">
+				<div class="slider">
+					<img src="images/daphne_simon_posing.png" alt="Daphne and Simon Posing" />
+					<img src="images/bridgerton_family.png" alt="The Bridgerton Family Posing" />
+					<img src="images/bridgerton_men.png" alt="The Bridgerton Men Posing" />
+					<img src="images/daphne_simon_dancing.png" alt="Daphne and Simon Dancing at a Ball" />
+					<img src="images/ladydanbury_simon.png" alt="Lady Danbury and Simon" />
+					<img src="images/featherington_sisters.png" alt="The Featherington Sisters Posing" />
+				</div>
+
+				<section>
+					<article class="home-article1">
+						<h2>The Gossip</h2>
+						<p>The Ton appears to be home to several wealthy and well-behaved families. With endless elaborate parties and a plethora of eligible suitors, everyone exists in harmony, or so they would like you to think. From scheming seamstresses, sensual opera singers, and sly siblings, there is no heart that is left unbroken. Although, all hope is not completely lost as I can assure you that there will be a wedding</p>
+					</article>
+
+					<article class="home-article2">
+						<img src="images/daphne_society_papers.png" alt="Daphne Reading Lady Whisteldown's Society Papers"/>
+						<div class="article-text">
+							<h2>Ladies of the Ton </h2>
+							<p>Their fair skin and embroidered dresses are all part of the mating tradition. Shown off at parties and given away to a match with money, these ladies need to stay sharp if they’re looking for more than just a match.</p>
+							<p class="ladies-gents-link"><a href="ladies.html">Meet the Ladies</a>
+							</p>
+						</div>
+					</article>
+
+					<article class="home-article3">
+						<img src="images/colin_society_papers.png" alt="Colin Reading Lady Whisteldown's Society Papers"/>
+						<div class="article-text">
+							<h2>Gentlemen of the Ton</h2>
+							<p>Honor and strength are no match for a title, with a Prince, Viscount, and Duke available. If one is so fortunate to come with wealth, you may be able to secure a match on your first debutante season.</p>
+							<p class="ladies-gents-link"><a href="gents.html">Meet the Gentlemen</a>
+							</p>
+						</div>
+					</article>
+
+					<article class="home-flowers-container">
+						<img class="home-flowers" src="images/flowers_home.jpg" alt="Flowers"/>
+
+						<div class="home-flowers-text">
+							<p class="home-flowers-text-top">"You do not know me, but I know you."
+							</p>
+							<p class="home-flowers-text-bottom"> - Lady Whisteldown </p>
+						</div>
+
+					</article>
+
+				</section>
+			</main>
+
+			<footer>
+				<a href="index.html"><img src="images/bridgerton_logo.png" alt="Lady Whisteldown's Society Papers Logo" width="100"/></a>
 				<ul>
 					<li><a href="ladies.html">Extraordinary Ladies</a></li>
-					<li><a href="gents.html">Extraordinary Gents</a></li>
+					<li><a href="men.html">Extraordinary Gents</a></li>
 				</ul>
-			</nav>
-		</header>
-
-		<main class="container site-content">
-			<div class="slider">
-				<img src="images/daphne_simon_posing.png" alt="Daphne and Simon Posing" />
-				<img src="images/bridgerton_family.png" alt="The Bridgerton Family Posing" />
-				<img src="images/bridgerton_men.png" alt="The Bridgerton Men Posing" />
-				<img src="images/daphne_simon_dancing.png" alt="Daphne and Simon Dancing at a Ball" />
-				<img src="images/ladydanbury_simon.png" alt="Lady Danbury and Simon" />
-				<img src="images/featherington_sisters.png" alt="The Featherington Sisters Posing" />
-			</div>
-
-			<section>
-				<article>
-					<h2>The Gossip</h2>
-					<p>The Ton appears to be home to several wealthy and well-behaved families. With endless elaborate parties and a plethora of eligible suitors, everyone exists in harmony, or so they would like you to think. From scheming seamstresses, sensual opera singers, and sly siblings, there is no heart that is left unbroken. Although, all hope is not completely lost as I can assure you that there will be a wedding</p>
-				</article>
-
-				<article>
-					<h2>Ladies of the Ton</h2>
-					<p>Their fair skin and embroidered dresses are all part of the mating tradition. Shown off at parties and given away to a match with money, these ladies need to stay sharp if they’re looking for more than just a match.</p>
-					<p>Meet the Ladies</p>
-					<img src="images/daphne_society_papers.png" alt="Daphne Reading Lady Whisteldown's Society Papers" width="1150" />
-				</article>
-
-				<article>
-					<h2>Gentlemen of the Ton</h2>
-					<img src="images/colin_society_papers.png" alt="Colin Reading Lady Whisteldown's Society Papers" width="1150" />
-					<p>Honor and strength are no match for a title, with a Prince, Viscount, and Duke available. If one is so fortunate to come with wealth, you may be able to secure a match on your first debutante season.</p>
-					<p>Meet the Gentlemen</p>
-				</article>
-
-				<article>
-					<img src="images/flowers_home.jpg" alt="Flowers" width="1150" />
-					<p>"You do not know me, but I know you."</p>
-					<p> - Lady Whisteldown </p>
-				</article>
-			</section>
-		</main>
-
-		<footer>
-			<a href="index.html"><img src="images/bridgerton_logo.png" alt="Lady Whisteldown's Society Papers Logo" width="100"/></a>
-			<ul>
-				<li><a href="ladies.html">Extraordinary Ladies</a></li>
-				<li><a href="men.html">Extraordinary Gents</a></li>
-			</ul>
-		</footer>
+			</footer>
+		</div>
 
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slider.min.js"></script>
     <script src="js/slider.js"></script>
+		<script src="js/hamburger.js"></script>
 	</body>
 </html>
