@@ -76,16 +76,18 @@ img {
 
 .logo {
 	width: 100px;
+	padding: 16px 0 5px;
 }
 
 header h1 {
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 
 header h2 {
+	padding-top: 5px;
 	text-align: center;
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 }
 
 /*********************** START HAMBURGER MENU STYLING **********************/
@@ -128,7 +130,7 @@ header h2 {
 .top, .middle {
 	position: absolute;
 	width: 62px;
-	height: 5px;
+	height: 2px;
 	background-color: #3e3d3d;
 	transition: all 350ms ease-in-out;
 	top: 20px;
@@ -192,7 +194,11 @@ header h2 {
 /*********************** END HAMBURGER MENU STYLING **********************/
 
 article h2, article p {
-	padding: 0 10px;
+	padding: 0 10px 5px;
+}
+
+article h2 {
+	font-size: 1.5rem;
 }
 
 article {
@@ -201,6 +207,31 @@ article {
 
 article img {
 	padding: 5px 0;
+}
+
+article p {
+	font-size: 1rem;
+}
+
+.ladies-gents-link {
+	display: inline-block;
+	padding-top: 4px;
+	margin-left: 5%;
+	margin-top: 10px;
+	text-align: center;
+	border-top: 2px solid #3e3d3d;
+	border-bottom: 2px solid #3e3d3d;
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+.ladies-gents-link a {
+	text-decoration: none;
+	color: #3e3d3d;
+}
+
+.ladies-gents-link a:hover{
+	color: black;
 }
 
 .home-article2 img {
@@ -245,3 +276,27 @@ article img {
 footer {
 	display: none;
 }
+
+/************************************* START 500PX MEDIA QUERY *************************************/
+@media (min-width: 500px) {
+	.home-flowers-text {
+		width: 70%;
+	}
+
+	header h1 {
+		font-size: 2rem;
+	}
+
+	header h2 {
+		font-size: 1.9rem;
+	}
+
+	.home-flowers-text-top {
+		font-size: 2rem;
+	}
+
+	.home-flowers-text-bottom {
+    font-size: 1.3rem;
+	}
+}
+/************************************* END 500PX MEDIA QUERY *************************************/
