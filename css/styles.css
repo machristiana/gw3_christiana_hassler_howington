@@ -81,13 +81,19 @@ img {
 
 header h1 {
 	text-align: center;
-	font-size: 1.8rem;
+	font-size: 2rem;
+	font-family: 'Averia Serif Libre', cursive;
+	font-weight: 700;
+	font-style: italic;
 }
 
 header h2 {
 	padding-top: 5px;
 	text-align: center;
-	font-size: 1.7rem;
+	font-size: 1.8rem;
+	font-family: 'Averia Serif Libre', cursive;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 /*********************** START HAMBURGER MENU STYLING **********************/
@@ -193,12 +199,18 @@ header h2 {
 
 /*********************** END HAMBURGER MENU STYLING **********************/
 
+.home-article1 h2 {
+	font-size: 1.8rem;
+}
+
 article h2, article p {
 	padding: 0 10px 5px;
 }
 
 article h2 {
 	font-size: 1.5rem;
+	font-family: 'Averia Serif Libre', cursive;
+	text-transform: uppercase;
 }
 
 article {
@@ -221,6 +233,7 @@ article p {
 	text-align: center;
 	border-top: 2px solid #3e3d3d;
 	border-bottom: 2px solid #3e3d3d;
+	font-family: 'Averia Serif Libre', cursive;
 	font-weight: 700;
 	font-size: 1.3rem;
 }
@@ -284,11 +297,11 @@ footer {
 	}
 
 	header h1 {
-		font-size: 2rem;
+		font-size: 2.4rem;
 	}
 
 	header h2 {
-		font-size: 1.9rem;
+		font-size: 2rem;
 	}
 
 	.home-flowers-text-top {
@@ -302,6 +315,10 @@ footer {
 /************************************* END 500PX MEDIA QUERY *************************************/
 /************************************* START 750PX MEDIA QUERY *************************************/
 @media (min-width: 750px) {
+	.site {
+		margin: 45px;
+	}
+
 	.logo {
     width: 160px;
     padding: 16px 0 16px;
@@ -320,10 +337,15 @@ footer {
 		margin-bottom: 30px;
 	}
 
+	.desktop-nav ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
 	.desktop-nav ul li {
 		display: inline-block;
 		font-size: 1.5rem;
-		padding: 0 20px;
+		font-family: 'Averia Serif Libre', cursive;
 		text-transform: uppercase;
 		font-weight: 700;
 	}
