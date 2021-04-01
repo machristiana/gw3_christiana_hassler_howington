@@ -300,3 +300,49 @@ footer {
 	}
 }
 /************************************* END 500PX MEDIA QUERY *************************************/
+/************************************* START 750PX MEDIA QUERY *************************************/
+@media (min-width: 750px) {
+	.hamburger-shell {
+	display: none;
+	}
+
+	.desktop-nav {
+		display: block;
+	}
+
+	.article-text {
+		flex:1;
+		padding: 0 5px;
+	}
+
+	header h1 {
+		font-size: 2.8rem;
+	}
+
+	header h2 {
+		font-size: 2.7rem;
+	}
+
+	.home-article2, .home-article3 {
+		display: flex;
+		align-items: center;
+	}
+
+	.home-article2{
+		flex-direction: row-reverse;
+	}
+
+	.home-article2 img, .home-article3 img{
+		width: 50%;
+		flex: 1;
+	}
+
+	.home-flowers-text-top {
+		font-size: 2.8rem;
+	}
+
+	.home-flowers-text-bottom {
+		font-size: 1.8rem;
+	}
+}
+/************************************* END 750PX MEDIA QUERY *************************************/
