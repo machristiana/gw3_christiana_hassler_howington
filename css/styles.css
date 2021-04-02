@@ -109,6 +109,8 @@ header h2 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+	display: none;
+	color: #333333;
 }
 
 .reveal {
@@ -116,15 +118,17 @@ header h2 {
   display: block;
   pointer-events: auto;
   visibility: visible;
+	color: #444444;
 }
 
 .hamburger-shell {
+	display: block;
   margin: 0;
   position: fixed;
   overflow: hidden;
   width: 52px;
   height: 100px;
-  overflow: auto;
+  /* overflow: auto; */  /*I commented this out because it was creating an odd issue on Mac browsers */
   left: calc(100% - 90px);
   top: 20px;
   cursor: pointer;
@@ -150,8 +154,15 @@ header h2 {
   top: 50px;
 }
 
-.bottom a:click {
-  display: none;
+
+/*Added this to hide the third button on menu open */
+.hide {
+	display: none;
+}
+
+/*Added to hide slider on menu open */
+.opacity-hide {
+	opacity: 0.1;
 }
 
 #menu {
@@ -198,7 +209,7 @@ header h2 {
 	height: 2px;
 }
 
-.menu-open .middle {
+.menu-open .middle, .menu-open .bottom {
 	transform: rotate(-225deg);
 	-webkit-transform: rotate(-225deg);
 	top: 30px;
