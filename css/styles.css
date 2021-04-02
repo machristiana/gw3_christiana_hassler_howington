@@ -128,7 +128,6 @@ header h2 {
   overflow: hidden;
   width: 52px;
   height: 100px;
-  /* overflow: auto; */  /*I commented this out because it was creating an odd issue on Mac browsers */
   left: calc(100% - 90px);
   top: 20px;
   cursor: pointer;
@@ -290,7 +289,7 @@ article p {
 }
 
 .home-flowers-text {
-	font-family: linotype-didot, serif;
+	font-family: 'Averia Serif Libre', cursive;
 	font-weight: 700;
 	font-style: normal;
 	position: absolute;
@@ -430,7 +429,7 @@ footer {
 
 	.home-flowers-text-top {
 		font-size: 3rem;
-		line-height: 3.6rem;
+		line-height: 4rem;
 		padding-bottom: 50px;
 	}
 
