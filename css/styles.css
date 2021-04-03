@@ -311,8 +311,42 @@ article p {
 }
 
 footer {
-	display: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0;
 }
+
+footer img {
+	max-width: 730px;
+	width: 90%;
+	padding: 5% 5% 5% 10%;
+}
+
+.footer-mobile-nav {
+	display: block;
+	text-align: center;
+	flex-shrink: .5;
+}
+
+.footer-mobile-nav ul li {
+	display: inline-block;
+	font-size: 1.1rem;
+	font-family: 'Averia Serif Libre', cursive;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px 0;
+}
+
+.footer-mobile-nav-ladies {
+	border-bottom: 1px solid #3e3d3d;
+}
+
+.footer-mobile-nav ul li a {
+	text-decoration: none;
+	color: #3e3d3d;
+}
+
 
 /************************************* START 500PX MEDIA QUERY *************************************/
 @media (min-width: 500px) {
@@ -338,8 +372,24 @@ footer {
 	.home-flowers-text-bottom {
     font-size: 1.3rem;
 	}
+
+
+	footer img {
+		max-width: 250px;
+		width: 100%;
+		padding: 5% 0 5% 22%;
+	}
+
+	.footer-mobile-nav ul li {
+		font-size: 1.3rem;
+	}
 }
 /************************************* END 500PX MEDIA QUERY *************************************/
+/************************************* START 600PX MEDIA QUERY *************************************/
+@media (min-width: 600px) {
+	
+}
+/************************************* END 600PX MEDIA QUERY *************************************/
 /************************************* START 750PX MEDIA QUERY *************************************/
 @media (min-width: 750px) {
 	.site {
