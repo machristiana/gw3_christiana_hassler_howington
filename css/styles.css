@@ -347,6 +347,10 @@ footer img {
 	color: #3e3d3d;
 }
 
+.footer-nav ul li a:hover {
+	color: black;
+}
+
 
 /************************************* START 500PX MEDIA QUERY *************************************/
 @media (min-width: 500px) {
@@ -456,6 +460,7 @@ footer img {
 
 	.home-article1 h2 {
 		font-size: 3.1rem;
+		padding: 30px 0 15px;
 	}
 
 	.home-article1 {
@@ -465,13 +470,18 @@ footer img {
 	}
 
 	article h2 {
-		font-size: 2rem;
+		font-size: 1.8rem;
+		padding-bottom: 8px;
 	}
 
 	.home-article2, .home-article3 {
 		display: flex;
 		align-items: center;
 		padding: 70px 0;
+	}
+
+	.home-article2 p, .home-article3 p {
+		padding-bottom: 12px;
 	}
 
 	.home-article2{
@@ -481,6 +491,10 @@ footer img {
 	.home-article2 img, .home-article3 img{
 		width: 50%;
 		flex: 1;
+	}
+
+	.article-text {
+		padding: 0 1% 0 2.5%;
 	}
 
 	.home-flowers-text-top {
@@ -502,6 +516,10 @@ footer img {
 /************************************* END 750PX MEDIA QUERY *************************************/
 /************************************* START 950PX MEDIA QUERY *************************************/
 @media (min-width: 950px) {
+	.desktop-nav ul li {
+    font-size: 1.8rem;
+	}
+
 	footer {
 		max-width: none;
 		justify-content: flex-start;
@@ -525,6 +543,7 @@ footer img {
 
 	.footer-nav ul li {
 		font-size: 1.5rem;
+		padding: 20px 0;
 	}
 
 	.footer-nav-ladies {
