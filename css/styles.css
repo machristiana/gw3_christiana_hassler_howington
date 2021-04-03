@@ -75,7 +75,8 @@ img {
 }
 
 .logo {
-	width: 100px;
+	max-width:788px;
+	width: 30%;
 	padding: 16px 0 5px;
 }
 
@@ -109,6 +110,8 @@ header h2 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+	display: none;
+	color: #333333;
 }
 
 .reveal {
@@ -116,15 +119,16 @@ header h2 {
   display: block;
   pointer-events: auto;
   visibility: visible;
+	color: #444444;
 }
 
 .hamburger-shell {
+	display: block;
   margin: 0;
   position: fixed;
   overflow: hidden;
   width: 52px;
   height: 100px;
-  overflow: auto;
   left: calc(100% - 90px);
   top: 20px;
   cursor: pointer;
@@ -150,8 +154,15 @@ header h2 {
   top: 50px;
 }
 
-.bottom a:click {
-  display: none;
+
+/*Added this to hide the third button on menu open */
+.hide {
+	display: none;
+}
+
+/*Added to hide slider on menu open */
+.opacity-hide {
+	opacity: 0.1;
 }
 
 #menu {
@@ -198,7 +209,7 @@ header h2 {
 	height: 2px;
 }
 
-.menu-open .middle {
+.menu-open .middle, .menu-open .bottom {
 	transform: rotate(-225deg);
 	-webkit-transform: rotate(-225deg);
 	top: 30px;
@@ -279,7 +290,7 @@ article p {
 }
 
 .home-flowers-text {
-	font-family: linotype-didot, serif;
+	font-family: 'Averia Serif Libre', cursive;
 	font-weight: 700;
 	font-style: normal;
 	position: absolute;
@@ -300,8 +311,42 @@ article p {
 }
 
 footer {
-	display: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0;
 }
+
+footer img {
+	max-width: 730px;
+	width: 90%;
+	padding: 5% 5% 5% 10%;
+}
+
+.footer-nav {
+	display: block;
+	text-align: center;
+	flex-shrink: .5;
+}
+
+.footer-nav ul li {
+	display: inline-block;
+	font-size: 1.1rem;
+	font-family: 'Averia Serif Libre', cursive;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px 0;
+}
+
+.footer-nav-ladies {
+	border-bottom: 1px solid #3e3d3d;
+}
+
+.footer-nav ul li a {
+	text-decoration: none;
+	color: #3e3d3d;
+}
+
 
 /************************************* START 500PX MEDIA QUERY *************************************/
 @media (min-width: 500px) {
@@ -327,8 +372,30 @@ footer {
 	.home-flowers-text-bottom {
     font-size: 1.3rem;
 	}
+
+
+	footer img {
+		max-width: 250px;
+		width: 100%;
+		padding: 5% 0 5% 22%;
+	}
+
+	.footer-nav ul li {
+		font-size: 1.3rem;
+	}
 }
 /************************************* END 500PX MEDIA QUERY *************************************/
+/************************************* START 600PX MEDIA QUERY *************************************/
+@media (min-width: 600px) {
+	.footer-nav ul li {
+		font-size: 1.6rem;
+	}
+
+		footer img {
+			padding-left: 30%
+		}
+}
+/************************************* END 600PX MEDIA QUERY *************************************/
 /************************************* START 750PX MEDIA QUERY *************************************/
 @media (min-width: 750px) {
 	.site {
@@ -336,7 +403,6 @@ footer {
 	}
 
 	.logo {
-    width: 160px;
     padding: 16px 0 16px;
 	}
 
@@ -419,15 +485,48 @@ footer {
 
 	.home-flowers-text-top {
 		font-size: 3rem;
-		line-height: 3.6rem;
+		line-height: 4rem;
 		padding-bottom: 50px;
 	}
 
 	.home-flowers-text-bottom {
 		font-size: 1.8rem;
 	}
+
+	footer {
+		max-width: 650px;
+		margin: auto;
+	}
+
 }
 /************************************* END 750PX MEDIA QUERY *************************************/
+/************************************* START 950PX MEDIA QUERY *************************************/
+@media (min-width: 950px) {
+	footer {
+		max-width: none;
+		justify-content: flex-start;
+		margin: 0;
+	}
+
+	footer img {
+		padding-left: 12%;
+		max-width: 200px;
+	}
+
+	.footer-nav {
+
+	}
+
+	.footer-nav ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.footer-nav ul li {
+		font-size: 1rem;
+	}
+}
+/************************************* END 950PX MEDIA QUERY *************************************/
 /************************************* START 1000PX MEDIA QUERY *************************************/
 @media (min-width: 1000px) {
 	.home-flowers-text-top {

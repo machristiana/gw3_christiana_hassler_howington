@@ -19,7 +19,6 @@
 
 		<!-- Adobe Font -->
 		<link rel="stylesheet" href="https://use.typekit.net/toy1tcj.css">
-		<link rel="stylesheet" href="https://use.typekit.net/toy1tcj.css">
 
 		<!-- Google Fonts  -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -39,8 +38,8 @@
 			<header>
 
 <!-- HAMBURGER MENU -->
-				<div class="bg-cover"></div>
-				<div onclick="myFunction()" role="button" id="button" class="hamburger-shell" aria-expanded="false">
+				<div id="bg-cover" class="bg-cover"></div>
+				<div role="button" id="button" class="hamburger-shell" aria-expanded="false">
 					<div class="top"></div>
 					<div class="middle"></div>
 					<div id="bottom" class="bottom"></div>
@@ -121,10 +120,14 @@
 
 			<footer>
 				<a href="index.html"><img src="images/bridgerton_logo.png" alt="Lady Whisteldown's Society Papers Logo" width="100"/></a>
-				<ul>
-					<li><a href="ladies.html">Extraordinary Ladies</a></li>
-					<li><a href="men.html">Extraordinary Gents</a></li>
-				</ul>
+
+				<nav class="footer-nav">
+					<ul>
+						<li class="footer-nav-ladies"><a href="ladies.html">Extraordinary Ladies</a></li>
+						<li><a href="men.html">Extraordinary Gents</a></li>
+					</ul>
+				</nav>
+
 			</footer>
 		</div>
 
