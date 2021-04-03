@@ -514,18 +514,24 @@ footer img {
 	}
 
 	.footer-nav {
-
+		margin: auto;
 	}
 
 	.footer-nav ul {
 		display: flex;
-		justify-content: space-evenly;
+		border-top: 1px solid #3e3d3d;
+		border-bottom: 1px solid #3e3d3d;
 	}
 
 	.footer-nav ul li {
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
-}
+
+	.footer-nav-ladies {
+		margin-right: 20px;
+		border-bottom: none;
+	}
+
 /************************************* END 950PX MEDIA QUERY *************************************/
 /************************************* START 1000PX MEDIA QUERY *************************************/
 @media (min-width: 1000px) {
