@@ -75,9 +75,8 @@ img {
 }
 
 .logo {
-	max-width:788px;
-	width: 30%;
-	padding: 16px 0 5px;
+	max-width: 936px;
+	width: 50%;
 }
 
 header h1 {
@@ -220,7 +219,8 @@ header h2 {
 /*********************** END HAMBURGER MENU STYLING **********************/
 
 .home-article1 h2,
-.ladies-article h2 {
+.ladies-article h2,
+.gents-article h2 {
 	font-size: 1.8rem;
 }
 
@@ -269,37 +269,52 @@ article p {
 	color: black;
 }
 
-.home-article2 img,
-.ladies-article3 img {
-	max-width: 1756px;
+.ladies-main,
+.gents-main {
+	opacity: .5;
+	max-width: 1458px;
 }
 
+.gents-article2 img {
+	max-width: 1738px;
+}
+
+.gents-article3 img {
+	max-width: 1218px;
+}
+
+.home-article2 img,
 .home-article3 img,
-.ladies-article2 img {
+.ladies-article2 img,
+.ladies-article3 img, {
 	max-width: 1756px;
 }
 
 .home-flowers-container,
 .ladies-main-container,
-.ladies-flowers-container {
+.ladies-flowers-container,
+.gents-main-container,
+.gents-flowers-container {
 	position: relative;
   text-align: center;
   color: #3e3d3d;
 	font-weight: 700;
-	padding-bottom: 0!important;
+	padding: 0;
 }
 
 .home-flowers,
-.ladies-main,
-.ladies-flowers {
+.ladies-flowers,
+.gents-flowers {
 	opacity: .5;
-	padding-bottom: 0!important;
-	margin-bottom: -5px;
+	max-width: 4161px;
+	padding: 0;
 }
 
 .home-flowers-text,
 .ladies-main-text,
-.ladies-flowers-text {
+.ladies-flowers-text,
+.gents-main-text,
+.gents-flowers-text {
 	font-family: 'Averia Serif Libre', cursive;
 	font-weight: 700;
 	font-style: normal;
@@ -312,14 +327,17 @@ article p {
 
 .home-flowers-text-top,
 .ladies-main-text-top,
-.ladies-flowers-text-top {
+.ladies-flowers-text-top
+.gents-main-text-top,
+.gents-flowers-text-top {
 	font-size: 1.6rem;
 	padding-bottom: 15px;
 	line-height: 2rem;
 }
 
 .home-flowers-text-bottom,
-.ladies-flowers-text-bottom {
+.ladies-flowers-text-bottom,
+.gents-flowers-text-bottom {
 	font-size: 1rem;
 }
 
@@ -327,7 +345,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10px 0;
+	padding: 30px 0;
 }
 
 footer img {
@@ -344,14 +362,15 @@ footer img {
 
 .footer-nav ul li {
 	display: inline-block;
-	font-size: 1.1rem;
+	font-size: .9rem;
 	font-family: 'Averia Serif Libre', cursive;
 	text-transform: uppercase;
 	font-weight: 700;
 	padding: 10px 0;
 }
 
-.footer-nav-ladies {
+.footer-nav-ladies,
+.footer-nav-flowers_gents {
 	border-bottom: 1px solid #3e3d3d;
 }
 
@@ -364,12 +383,27 @@ footer img {
 	color: black;
 }
 
-
+/************************************* START 380PX MEDIA QUERY *************************************/
+@media (min-width: 380px) {
+	.logo {
+		width: 40%;
+	}
+	.footer-nav ul li {
+		font-size: 1.1rem;
+	}
+}
+/************************************* START 380PX MEDIA QUERY *************************************/
 /************************************* START 500PX MEDIA QUERY *************************************/
 @media (min-width: 500px) {
+	.logo {
+		width: 30%;
+	}
+
 	.home-flowers-text,
 	.ladies-main-text,
-	.ladies-flowers-text {
+	.ladies-flowers-text,
+	.gents-main-text,
+	.gents-flowers-text {
 		width: 80%;
 	}
 
@@ -383,7 +417,9 @@ footer img {
 
 	.home-flowers-text-top,
 	.ladies-main-text-top,
-	.ladies-flowers-text-top {
+	.ladies-flowers-text-top,
+	.gents-main-text-top,
+	.gents-flowers-text-top {
 		font-size: 2rem;
 		line-height: 2.4rem;
 		padding-bottom: 30px;
@@ -391,7 +427,8 @@ footer img {
 	}
 
 	.home-flowers-text-bottom,
-	.ladies-flowers-text-bottom {
+	.ladies-flowers-text-bottom,
+	.gents-flowers-text-bottom {
     font-size: 1.3rem;
 	}
 
@@ -422,10 +459,6 @@ footer img {
 @media (min-width: 750px) {
 	.site {
 		margin: 45px;
-	}
-
-	.logo {
-    padding: 16px 0 16px;
 	}
 
 	.hamburger-shell {
@@ -477,13 +510,15 @@ footer img {
 	}
 
 	.home-article1 h2,
-	.ladies-article1 h2 {
+	.ladies-article1 h2,
+	.gents-article1 h2 {
 		font-size: 3.1rem;
 		padding: 30px 0 15px;
 	}
 
 	.home-article1,
-	.ladies-article1 {
+	.ladies-article1,
+	.gents-article1 {
 		max-width: 700px;
 		margin: 0 auto;
 		text-align: center;
@@ -497,7 +532,9 @@ footer img {
 	.home-article2,
 	.home-article3,
 	.ladies-article2,
-	.ladies-article3 {
+	.ladies-article3,
+	.gents-article2,
+	.gents-article3 {
 		display: flex;
 		align-items: center;
 		padding: 70px 0;
@@ -506,19 +543,24 @@ footer img {
 	.home-article2 p,
 	.home-article3 p,
 	.ladies-article2 p,
-	.ladies-article3 p {
+	.ladies-article3 p,
+	.gents-article2 p,
+	.gents-article3 p {
 		padding-bottom: 12px;
 	}
 
 	.home-article2,
-	.ladies-article3 {
+	.ladies-article3,
+	.gents-article3 {
 		flex-direction: row-reverse;
 	}
 
 	.home-article2 img,
 	.home-article3 img,
 	.ladies-article2 img,
-	.ladies-article3 img {
+	.ladies-article3 img,
+	.gents-article2 img,
+	.gents-article3 img {
 		width: 50%;
 		flex: 1;
 	}
@@ -529,14 +571,17 @@ footer img {
 
 	.home-flowers-text-top,
 	.ladies-main-text-top,
-	.ladies-flowers-text-top {
+	.ladies-flowers-text-top,
+	.gents-main-text-top,
+	.gents-flowers-text-top {
 		font-size: 3rem;
 		line-height: 4rem;
 		padding-bottom: 50px;
 	}
 
 	.home-flowers-text-bottom,
-	.ladies-flowers-text-bottom {
+	.ladies-flowers-text-bottom,
+	.gents-flowers-text-bottom {
 		font-size: 1.8rem;
 	}
 
@@ -578,7 +623,8 @@ footer img {
 		padding: 20px 0;
 	}
 
-	.footer-nav-ladies {
+	.footer-nav-ladies,
+	.footer-nav-gents {
 		margin-right: 20px;
 		border-bottom: none;
 	}
@@ -589,12 +635,15 @@ footer img {
 @media (min-width: 1000px) {
 	.home-flowers-text-top,
 	.ladies-main-text-top,
-	.ladies-flowers-text-top {
+	.ladies-flowers-text-top,
+	.gents-main-text-top,
+	.gents-flowers-text-top {
 		font-size: 4rem;
 	}
 
 	.home-flowers-text-bottom,
-	.ladies-flowers-text-bottom {
+	.ladies-flowers-text-bottom,
+	.gents-flowers-text-bottom {
 		font-size: 2.8rem;
 		padding-top: 30px;
 	}
