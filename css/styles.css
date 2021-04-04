@@ -219,11 +219,13 @@ header h2 {
 
 /*********************** END HAMBURGER MENU STYLING **********************/
 
-.home-article1 h2 {
+.home-article1 h2,
+.ladies-article h2 {
 	font-size: 1.8rem;
 }
 
-article h2, article p {
+article h2,
+article p {
 	padding: 0 10px 5px;
 }
 
@@ -267,15 +269,19 @@ article p {
 	color: black;
 }
 
-.home-article2 img {
+.home-article2 img,
+.ladies-article3 img {
 	max-width: 1756px;
 }
 
-.home-article3 img {
+.home-article3 img,
+.ladies-article2 img {
 	max-width: 1756px;
 }
 
-.home-flowers-container {
+.home-flowers-container,
+.ladies-main-container,
+.ladies-flowers-container {
 	position: relative;
   text-align: center;
   color: #3e3d3d;
@@ -283,11 +289,15 @@ article p {
 	padding-bottom: 0!important;
 }
 
-.home-flowers {
+.home-flowers,
+.ladies-main,
+.ladies-flowers {
 	opacity: .5;
 }
 
-.home-flowers-text {
+.home-flowers-text,
+.ladies-main-text,
+.ladies-flowers-text {
 	font-family: 'Averia Serif Libre', cursive;
 	font-weight: 700;
 	font-style: normal;
@@ -298,13 +308,16 @@ article p {
 	width: 90%;
 }
 
-.home-flowers-text-top {
+.home-flowers-text-top,
+.ladies-main-text-top,
+.ladies-flowers-text-top {
 	font-size: 1.6rem;
 	padding-bottom: 15px;
 	line-height: 2rem;
 }
 
-.home-flowers-text-bottom {
+.home-flowers-text-bottom,
+.ladies-flowers-text-bottom {
 	font-size: 1rem;
 }
 
@@ -352,7 +365,9 @@ footer img {
 
 /************************************* START 500PX MEDIA QUERY *************************************/
 @media (min-width: 500px) {
-	.home-flowers-text {
+	.home-flowers-text,
+	.ladies-main-text,
+	.ladies-flowers-text {
 		width: 80%;
 	}
 
@@ -364,14 +379,17 @@ footer img {
 		font-size: 2rem;
 	}
 
-	.home-flowers-text-top {
+	.home-flowers-text-top,
+	.ladies-main-text-top,
+	.ladies-flowers-text-top {
 		font-size: 2rem;
 		line-height: 2.4rem;
 		padding-bottom: 30px;
 
 	}
 
-	.home-flowers-text-bottom {
+	.home-flowers-text-bottom,
+	.ladies-flowers-text-bottom {
     font-size: 1.3rem;
 	}
 
@@ -456,12 +474,14 @@ footer img {
 		font-size: 2.7rem;
 	}
 
-	.home-article1 h2 {
+	.home-article1 h2,
+	.ladies-article1 h2 {
 		font-size: 3.1rem;
 		padding: 30px 0 15px;
 	}
 
-	.home-article1 {
+	.home-article1,
+	.ladies-article1 {
 		max-width: 700px;
 		margin: 0 auto;
 		text-align: center;
@@ -472,21 +492,31 @@ footer img {
 		padding-bottom: 8px;
 	}
 
-	.home-article2, .home-article3 {
+	.home-article2,
+	.home-article3,
+	.ladies-article2,
+	.ladies-article3 {
 		display: flex;
 		align-items: center;
 		padding: 70px 0;
 	}
 
-	.home-article2 p, .home-article3 p {
+	.home-article2 p,
+	.home-article3 p,
+	.ladies-article2 p,
+	.ladies-article3 p {
 		padding-bottom: 12px;
 	}
 
-	.home-article2{
+	.home-article2,
+	.ladies-article3 {
 		flex-direction: row-reverse;
 	}
 
-	.home-article2 img, .home-article3 img{
+	.home-article2 img,
+	.home-article3 img,
+	.ladies-article2 img,
+	.ladies-article3 img {
 		width: 50%;
 		flex: 1;
 	}
@@ -495,13 +525,16 @@ footer img {
 		padding: 0 1% 0 2.5%;
 	}
 
-	.home-flowers-text-top {
+	.home-flowers-text-top,
+	.ladies-main-text-top,
+	.ladies-flowers-text-top {
 		font-size: 3rem;
 		line-height: 4rem;
 		padding-bottom: 50px;
 	}
 
-	.home-flowers-text-bottom {
+	.home-flowers-text-bottom,
+	.ladies-flowers-text-bottom {
 		font-size: 1.8rem;
 	}
 
@@ -509,7 +542,6 @@ footer img {
 		max-width: 650px;
 		margin: auto;
 	}
-
 }
 /************************************* END 750PX MEDIA QUERY *************************************/
 /************************************* START 950PX MEDIA QUERY *************************************/
@@ -548,15 +580,19 @@ footer img {
 		margin-right: 20px;
 		border-bottom: none;
 	}
+}
 
 /************************************* END 950PX MEDIA QUERY *************************************/
 /************************************* START 1000PX MEDIA QUERY *************************************/
 @media (min-width: 1000px) {
-	.home-flowers-text-top {
+	.home-flowers-text-top,
+	.ladies-main-text-top,
+	.ladies-flowers-text-top {
 		font-size: 4rem;
 	}
 
-	.home-flowers-text-bottom {
+	.home-flowers-text-bottom,
+	.ladies-flowers-text-bottom {
 		font-size: 2.8rem;
 		padding-top: 30px;
 	}
@@ -565,6 +601,5 @@ footer img {
 		max-width: 1000px;
 		margin: 0 auto;
 	}
-
 }
 /************************************* END 1000PX MEDIA QUERY *************************************/

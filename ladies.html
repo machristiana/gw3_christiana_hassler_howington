@@ -17,81 +17,129 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- Adobe Font -->
+		<link rel="stylesheet" href="https://use.typekit.net/toy1tcj.css">
+		<link rel="stylesheet" href="https://use.typekit.net/toy1tcj.css">
+
+		<!-- Google Fonts  -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 
 	</head>
 
-	<body class="site">
-		<header>
-			<a href="index.html"><img src="images/bridgerton_logo.png" alt="Lady Whisteldown's Society Papers Logo" width="150"/></a>
-			<h1>Lady Whisteldown's</h1>
-			<h2>Society Papers</h2>
+	<body>
+		<div class="site">
+			<header>
 
-			<nav class="desktop-nav">
-				<ul>
-					<li><a href="ladies.html">Extraordinary Ladies</a></li>
-					<li><a href="gents.html">Extraordinary Gents</a></li>
-				</ul>
-			</nav>
-		</header>
+				<!-- HAMBURGER MENU -->
+				<div class="bg-cover"></div>
+				<div onclick="myFunction()" role="button" id="button" class="hamburger-shell" aria-expanded="false">
+					<div class="top"></div>
+					<div class="middle"></div>
+					<div id="bottom" class="bottom"></div>
+				</div>
 
-		<main class="container site-content">
-			<section>
-				<img src="images/queencharlotte.jpg" alt="Queen Charlotte" width="1000"/>
-				<h2>Ladies of the Ton</h2>
-			</section>
+				<nav class="menu" id="menu">
+					<ul>
+						<li><a href="ladies.html">Extraordinary Ladies</a></li>
+						<li><a href="gents.html">Extraordinary Gents</a></li>
+					</ul>
+				</nav>
+				<!-- HAMBURGER MENU -->
 
-			<section>
-				<article>
-					<h2>Meet the Ladies</h2>
-					<p>Young, beautiful, and naive, the ladies of the ton are coming out to society in a way they could have never imagined. With expectations of meeting their future husband, these ladies have a monumental decision to make. With the aid of their mothers, brothers, and sometimes the queen, they hope to find a match, not necessarily for love, but for a title, fortune and fame.</p>
-				</article>
+				<div class="header-container">
+					<a href="index.html"><img class="logo" src="images/bridgerton_logo.png" alt="Lady Whisteldown's Society Papers Logo" /></a>
+					<h1>Lady Whisteldown's</h1>
+					<h2>Society Papers</h2>
+				</div>
 
-				<article>
-					<img src="images/daphne.png" alt="Daphne Bridgerton" width="1000" />
-					<h3>Daphne Bridgerton</h3>
-					<p>Daphne is the most favored debutante in the ton. Even the Queen has taken a liking to her. From a middle-aged suitor, a meddling brother, a caring prince, and the mysterious duke, Daphne has her hands full.</p>
-				</article>
+				<nav class="desktop-nav">
+					<ul>
+						<li><a href="ladies.html">Extraordinary Ladies</a></li>
+						<li><a href="gents.html">Extraordinary Gents</a></li>
+					</ul>
+				</nav>
+			</header>
 
-				<article>
-					<img src="images/marina.png" alt="Marina Thompson" width="1000" />
-					<h2>Marina Thompson</h2>
-					<p>Cast upon the Featherington family, Marina also comes with a secret. She takes the fancy of several men, including Mr. Featherington and Colin Bridgerton. Her heart, however, lies with a soldier. </p>
-				</article>
+			<main class="container site-content">
+				<section class="ladies-main-container">
+					<img class="ladies-main" src="images/queencharlotte.jpg" alt="Queen Charlotte" />
+					<div class="ladies-main-text">
+						<h2 class="ladies-main-text-top">Ladies of the Ton</h2>
+					</div>
+				</section>
 
-				<article>
-					<img src="images/flowers_ladies.jpg" alt="Flowers" width="1000" />
-					<p>“Which young ladies might succeed at securing a match?”</p>
-					<p> - Lady Whistledown</p>
-				</article>
+				<section>
+					<article class="ladies-article1">
+						<h2>Meet the Ladies</h2>
+						<p>Young, beautiful, and naive, the ladies of the ton are coming out to society in a way they could have never imagined. With expectations of meeting their future husband, these ladies have a monumental decision to make. With the aid of their mothers, brothers, and sometimes the queen, they hope to find a match, not necessarily for love, but for a title, fortune and fame.</p>
+					</article>
 
-				<article>
-					<h2>Penelope Featherington</h2>
-					<p>As a sweet-natured young girl, she is the target of ruthless hurlings from her sisters. Those who truly know Penelope, remain her dear friends. As Eloise’s best friend, Penelope spends a fair amount of time with Colin Bridgerton and eventually develops romantic feelings.</p>
-					<img src="images/penelope.png" alt="Penelope Featherington" width="1000" />
-				</article>
+					<article class="ladies-article2">
+						<img src="images/daphne.png" alt="Daphne Bridgerton" />
+						<div class="article-text">
+							<h2>Daphne Bridgerton</h2>
+							<p>Daphne is the most favored debutante in the ton. Even the Queen has taken a liking to her. From a middle-aged suitor, a meddling brother, a caring prince, and the mysterious duke, Daphne has her hands full.</p>
+						</div>
+					</article>
 
-				<article>
-					<h2>Eloise Bridgerton</h2>
-					<p>Full of curiosity and ambition, Eloise has no intent to find a husband and pursues a life of friendship. Her observant nature thrusts her into a hunt to find the true Lady Whistledown. Although, if she’s not careful,  her search may reveal something she’d be horrified to know.</p>
-					<img src="images/eloise.png" alt="Eloise Bridgerton" width="1000" />
-				</article>
-			</section>
-		</main>
+					<article class="ladies-article2">
+						<img src="images/marina.png" alt="Marina Thompson" />
+						<div class="article-text">
+							<h2>Marina Thompson</h2>
+							<p>Cast upon the Featherington family, Marina also comes with a secret. She takes the fancy of several men, including Mr. Featherington and Colin Bridgerton. Her heart, however, lies with a soldier. </p>
+						</div>
+					</article>
 
-		<footer>
-			<a href="index.html"><img src="images/bridgerton_logo.png" alt="Lady Whisteldown's Society Papers Logo" width="100"/></a>
-			<ul>
-				<li><a href="ladies.html">Extraordinary Ladies</a></li>
-				<li><a href="men.html">Extraordinary Gents</a></li>
-			</ul>
-		</footer>
+					<article class="ladies-flowers-container">
+						<img class="ladies-flowers" src="images/flowers_ladies.jpg" alt="Flowers" />
+						<div class="ladies-flowers-text">
+							<p class="ladies-flowers-text-top">“Which young ladies might succeed at securing a match?”</p>
+							<p class="ladies-flowers-text-bottom"> - Lady Whistledown</p>
+					</div>
+					</article>
+
+					<article class="ladies-article3">
+						<img src="images/penelope.png" alt="Penelope Featherington" />
+						<div class="article-text">
+							<h2>Penelope Featherington</h2>
+							<p>As a sweet-natured young girl, she is the target of ruthless hurlings from her sisters. Those who truly know Penelope, remain her dear friends. As Eloise’s best friend, Penelope spends a fair amount of time with Colin Bridgerton and eventually develops romantic feelings.</p>
+						</div>
+					</article>
+
+					<article class="ladies-article3">
+						<img src="images/eloise.png" alt="Eloise Bridgerton" />
+						<div class="article-text">
+							<h2>Eloise Bridgerton</h2>
+							<p>Full of curiosity and ambition, Eloise has no intent to find a husband and pursues a life of friendship. Her observant nature thrusts her into a hunt to find the true Lady Whistledown. Although, if she’s not careful,  her search may reveal something she’d be horrified to know.</p>
+						</div>
+					</article>
+				</section>
+			</main>
+
+			<footer>
+				<a href="index.html"><img src="images/bridgerton_logo.png" alt="Lady Whisteldown's Society Papers Logo"/></a>
+				<nav class="footer-nav">
+					<ul>
+						<li class="footer-nav-ladies"><a href="ladies.html">Extraordinary Ladies</a></li>
+						<li><a href="men.html">Extraordinary Gents</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</div>
 
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slider.min.js"></script>
     <script src="js/slider.js"></script>
+		<script src="js/hamburger.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
