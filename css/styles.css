@@ -218,6 +218,45 @@ header h2 {
 
 /*********************** END HAMBURGER MENU STYLING **********************/
 
+.overlay-container {
+	position: relative;
+	flex:1;
+	padding: 0;
+	text-align: center;
+	color: #3e3d3d;
+	font-weight: 700;
+}
+
+.ladies-gents-link {
+	z-index: 200;
+	transition: opacity 5s;
+	opacity: 0;
+	font-family: 'Averia Serif Libre', cursive;
+	font-weight: 700;
+	font-style: normal;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.overlay-image {
+	padding: 0;
+}
+
+.overlay {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgb(191,148,247);
+	background: radial-gradient(circle, rgba(191,148,247,0.29315476190476186) 0%, rgba(191,148,247,1) 100%);
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	transition: 2s;
+}
+
 .home-article1 h2,
 .ladies-article h2,
 .gents-article h2 {
@@ -253,20 +292,29 @@ article p {
 	margin-left: 5%;
 	margin-top: 10px;
 	text-align: center;
-	border-top: 2px solid #3e3d3d;
-	border-bottom: 2px solid #3e3d3d;
+	border-top: 2px solid #f0ece8;
+	border-bottom: 2px solid #f0ece8;
 	font-family: 'Averia Serif Libre', cursive;
 	font-weight: 700;
-	font-size: 1.3rem;
+	font-size: 1.8rem;
+	transition: .5s;
+}
+
+.ladies-gents-link:hover {
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	transition: .5s;
 }
 
 .ladies-gents-link a {
 	text-decoration: none;
-	color: #3e3d3d;
+	color: #f0ece8;
+	transition: .5s;
 }
 
 .ladies-gents-link a:hover{
-	color: black;
+	color: white;
+	transition: .5s;
 }
 
 .ladies-main,
@@ -553,16 +601,6 @@ footer img {
 	.ladies-article3,
 	.gents-article3 {
 		flex-direction: row-reverse;
-	}
-
-	.home-article2 img,
-	.home-article3 img,
-	.ladies-article2 img,
-	.ladies-article3 img,
-	.gents-article2 img,
-	.gents-article3 img {
-		width: 50%;
-		flex: 1;
 	}
 
 	.article-text {
