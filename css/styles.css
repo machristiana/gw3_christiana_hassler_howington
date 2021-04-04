@@ -292,8 +292,8 @@ article p {
 	margin-left: 5%;
 	margin-top: 10px;
 	text-align: center;
-	border-top: 2px solid #3e3d3d;
-	border-bottom: 2px solid #3e3d3d;
+	border-top: 2px solid #f0ece8;
+	border-bottom: 2px solid #f0ece8;
 	font-family: 'Averia Serif Libre', cursive;
 	font-weight: 700;
 	font-size: 1.8rem;
@@ -301,19 +301,19 @@ article p {
 }
 
 .ladies-gents-link:hover {
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
 	transition: .5s;
 }
 
 .ladies-gents-link a {
 	text-decoration: none;
-	color: #3e3d3d;
+	color: #f0ece8;
 	transition: .5s;
 }
 
 .ladies-gents-link a:hover{
-	color: black;
+	color: white;
 	transition: .5s;
 }
 
