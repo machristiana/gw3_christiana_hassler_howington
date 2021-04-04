@@ -227,10 +227,10 @@ header h2 {
 	font-weight: 700;
 }
 
-#ladies-gents-link {
-	z-index: 100;
-	transition: visibility 2s;
-	visibility: hidden;
+.ladies-gents-link {
+	z-index: 200;
+	transition: opacity 5s;
+	opacity: 0;
 	font-family: 'Averia Serif Libre', cursive;
 	font-weight: 700;
 	font-style: normal;
@@ -239,10 +239,6 @@ header h2 {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
-/* .overlay-container p:hover {
-	opacity: 1;
-} */
 
 .overlay-image {
 	padding: 0;
@@ -258,50 +254,8 @@ header h2 {
 	width: 100%;
 	height: 100%;
 	z-index: 100;
-	transition: 3s;
+	transition: 2s;
 }
-
-.overlay:hover {
-	opacity: 100%;
-	transition: 3s;
-}
-
-
-
-/* .home-flowers-container,
-.ladies-main-container,
-.ladies-flowers-container,
-.gents-main-container,
-.gents-flowers-container {
-	position: relative;
-  text-align: center;
-  color: #3e3d3d;
-	font-weight: 700;
-	padding: 0;
-}
-
-.home-flowers,
-.ladies-flowers,
-.gents-flowers {
-	opacity: .5;
-	max-width: 4161px;
-	padding: 0;
-}
-
-.home-flowers-text,
-.ladies-main-text,
-.ladies-flowers-text,
-.gents-main-text,
-.gents-flowers-text {
-	font-family: 'Averia Serif Libre', cursive;
-	font-weight: 700;
-	font-style: normal;
-	position: absolute;
-	top: 54%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 90%;
-} */
 
 .home-article1 h2,
 .ladies-article h2,
@@ -342,16 +296,25 @@ article p {
 	border-bottom: 2px solid #3e3d3d;
 	font-family: 'Averia Serif Libre', cursive;
 	font-weight: 700;
-	font-size: 1.3rem;
+	font-size: 1.8rem;
+	transition: .5s;
+}
+
+.ladies-gents-link:hover {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	transition: .5s;
 }
 
 .ladies-gents-link a {
 	text-decoration: none;
 	color: #3e3d3d;
+	transition: .5s;
 }
 
 .ladies-gents-link a:hover{
 	color: black;
+	transition: .5s;
 }
 
 .ladies-main,
