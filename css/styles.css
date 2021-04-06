@@ -334,7 +334,7 @@ article p {
 .home-article2 img,
 .home-article3 img,
 .ladies-article2 img,
-.ladies-article3 img, {
+.ladies-article3 img {
 	max-width: 1756px;
 }
 
@@ -431,6 +431,7 @@ footer img {
 	color: black;
 }
 
+
 /************************************* START 380PX MEDIA QUERY *************************************/
 @media (min-width: 380px) {
 	.logo {
@@ -471,7 +472,6 @@ footer img {
 		font-size: 2rem;
 		line-height: 2.4rem;
 		padding-bottom: 30px;
-
 	}
 
 	.home-flowers-text-bottom,
