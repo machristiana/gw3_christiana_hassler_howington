@@ -97,6 +97,15 @@ header h2 {
 	text-transform: uppercase;
 }
 
+/********************* Start Animated Quote styling *******************/
+
+.ml2 .letter {
+  display: inline-block;
+}
+
+/********************* End Animated Quote styling *******************/
+
+
 /*********************** START HAMBURGER MENU STYLING **********************/
 .bg-cover {
   position: fixed;
@@ -448,9 +457,9 @@ article p {
 .ladies-flowers-text-top,
 .gents-main-text-top,
 .gents-flowers-text-top {
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	padding-bottom: 15px;
-	line-height: 2rem;
+	line-height: 1.4rem;
 }
 
 .home-flowers-text-bottom,
@@ -541,7 +550,7 @@ footer img {
 	.ladies-flowers-text-top,
 	.gents-main-text-top,
 	.gents-flowers-text-top {
-		font-size: 2rem;
+		font-size: 1.8rem;
 		line-height: 2.4rem;
 		padding-bottom: 30px;
 	}
@@ -763,7 +772,7 @@ footer img {
 	.ladies-flowers-text-top,
 	.gents-main-text-top,
 	.gents-flowers-text-top {
-		font-size: 4rem;
+		font-size: 3.7rem;
 	}
 
 	.home-flowers-text-bottom,
