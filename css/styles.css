@@ -482,7 +482,7 @@ footer {
 footer img {
 	max-width: 730px;
 	width: 85%;
-	padding: 5%;
+	padding: 5% 5% 5% 15%;
 }
 
 .footer-flex-image {
@@ -493,7 +493,7 @@ footer img {
 	display: block;
 	text-align: center;
 	flex: 2;
-	padding-right: 15px;
+	padding: 0 15px 0 10px;
 }
 
 .footer-nav ul li {
@@ -720,7 +720,7 @@ footer img {
 /************************************* START 950PX MEDIA QUERY *************************************/
 @media (min-width: 950px) {
 	.desktop-nav ul li {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 	}
 
 	footer {
