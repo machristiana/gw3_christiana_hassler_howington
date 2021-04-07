@@ -184,16 +184,14 @@ header h2 {
   text-decoration: none;
   font-weight: 300;
   font-size: 1.3rem;
-  padding: 24px;
-  width: 233px;
+  width: 240px;
   text-align: right;
 	font-family: 'Averia Serif Libre', cursive;
 }
 
 #menu li {
 	text-decoration: none!important;
-	padding-bottom: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 42px;
 	list-style: none;
 	color: #f0ece8;
 	transition: all 150ms ease;
@@ -201,7 +199,7 @@ header h2 {
 
 #menu li:hover {
 	color: #fff;
-	padding-right: 3px;
+	/* padding-right: 3px; */
 }
 
 #menu a {
@@ -226,53 +224,59 @@ header h2 {
 }
 
 /*********************** END HAMBURGER MENU STYLING **********************/
-/*********************** START NAV SPARKLE HOVER STYLING **********************/
-/* https://codepen.io/catheraaine/pen/LRVjdX */
-.sparkle-container {
-	box-sizing: border-box;
-	width: 100%;
-	height: 0;
-	text-align: center;
-}
+/************************ NAV HOVER ANIMATION START **************************/
+/* https://codepen.io/bhautikbharadava/pen/OdPzdW */
+	.btn {
+		cursor:pointer;
+		position:relative;
+		padding:10px 20px;
+		/* font-size:28px; */
+		border-top-right-radius:10px;
+		border-bottom-left-radius:10px;
+		transition:all 1s;
+	}
 
-.sparkle {
-	max-width: 10em;
-	margin: auto auto;
-}
-.sparkle:hover {
-	cursor: pointer;
-}
+	.btn:after,
+	.btn:before {
+		content:" ";
+		width:10px;
+		height:10px;
+		position:absolute;
+		transition:all 1s;
+		}
 
-.u-hover--sparkle {
-	box-sizing: border-box;
-	position: relative;
-	padding: 0.75em;
-}
-.u-hover--sparkle::before, .u-hover--sparkle::after {
-	content: "";
-	box-sizing: border-box;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	transform-origin: center;
-}
-.u-hover--sparkle::before {
-	border-top: 0.2em solid rgba(154, 123, 170, 0.9);
-	border-bottom: 0.2em solid rgba(154, 123, 170, 0.9);
-	transform: scale3d(0, 1, 1);
-}
-.u-hover--sparkle::after {
-	border-left: 0.2em solid rgba(154, 123, 170, 0.9);
-	border-right: 0.2em solid rgba(154, 123, 170, 0.9);
-	transform: scale3d(1, 0, 1);
-}
-.u-hover--sparkle:hover::before, .u-hover--sparkle:hover::after {
-	transform: scale3d(1, 1, 1);
-	transition: transform 1700ms;
-}
-/*********************** END NAV SPARKLE HOVER STYLING **********************/
+	.btn:after {
+		top:-1px;
+		left:-1px;
+		border-top:5px solid rgba(154, 123, 170, 0.9);
+		border-left:5px solid rgba(154, 123, 170, 0.9);
+	}
+
+	.btn:before{
+		bottom:-1px;
+		right:-1px;
+		border-bottom:5px solid rgba(154, 123, 170, 0.9);
+		border-right:5px solid rgba(154, 123, 170, 0.9);
+	}
+
+	.btn:hover{
+		border-top-right-radius:0px;
+		border-bottom-left-radius:0px;
+	}
+
+	.btn:hover:before,
+	.btn:hover:after{
+		width:100%;
+		height:100%;
+	}
+
+	.data-container{
+		height:100vh;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	/************************ NAV HOVER ANIMATION END **************************/
 
 .overlay-container {
 	position: relative;
@@ -504,14 +508,11 @@ footer img {
 	border-bottom: 1px solid #3e3d3d;
 }
 
-.footer-nav-ladies {
-	padding-bottom: 42px;
-}
-
-.footer-nav-gents {
-	padding-top: 22px;
+.footer-nav-line {
 	border-top: 1px solid #3e3d3d;
 	display: inline-block;
+	margin-top: 20px;
+	padding-top: 20px;
 }
 
 .footer-nav ul li a {
@@ -522,8 +523,13 @@ footer img {
 .footer-nav ul li a:hover {
 	color: black;
 }
-
-/************************************* START 500PX MEDIA QUERY *************************************/
+/************************************* START 425PX MEDIA QUERY *************************************/
+@media (min-width: 425px) {
+	.footer-nav ul li {
+		font-size: 1.1;
+	}
+}
+/************************************* END 425PX MEDIA QUERY *************************************/
 @media (min-width: 500px) {
 	.logo {
 		width: 30%;
@@ -564,13 +570,6 @@ footer img {
 	.footer-nav ul li {
 		font-size: 1.3rem;
 	}
-
-	.footer-nav-ladies {
-		padding-bottom: 52px;
-	}
-
-	.footer-nav-gents {
-		padding-top: 30px;
 }
 /************************************* END 500PX MEDIA QUERY *************************************/
 /************************************* START 600PX MEDIA QUERY *************************************/
@@ -582,6 +581,7 @@ footer img {
 /************************************* END 600PX MEDIA QUERY *************************************/
 /************************************* START 750PX MEDIA QUERY *************************************/
 @media (min-width: 750px) {
+
 	.site {
 		margin: 45px;
 	}
@@ -715,9 +715,6 @@ footer img {
 		font-size: 1.8rem;
 	}
 
-	.footer-nav-ladies {
-		padding-bottom: 65px;
-	}
 }
 /************************************* END 750PX MEDIA QUERY *************************************/
 /************************************* START 950PX MEDIA QUERY *************************************/
@@ -733,35 +730,51 @@ footer img {
 	}
 
 	footer img {
-		padding-left: 12%;
 		max-width: 200px;
+		padding: 0 0 0 5%;
 	}
 
 	.footer-nav {
 		margin: auto;
-		flex: 3;
+		flex: 3.5;
+	}
+
+	.footer-nav-line {
+		border-top: none;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		flex: 1;
 	}
 
 	.footer-nav ul {
 		display: flex;
 		border-top: 1px solid #3e3d3d;
 		border-bottom: 1px solid #3e3d3d;
-		padding: 30px 0 55px;
+		padding: 30px 0;
 	}
 
 	.footer-nav ul li {
 		font-size: 1.3rem;
 		width: 100%;
-		padding: 0;
+		padding: 10px 0;
+	}
+
+	.footer-nav-gents {
+		margin: 0 5px;
+	}
+
+
+	.footer-nav-ladies {
+		margin-right: 5px;
+		width: 100%;
+		flex: 1;
 	}
 
 	.footer-nav ul li a {
 		width: 100%;
 	}
 
-	.footer-nav-gents {
-		border-top: none;
-	}
 }
 
 /************************************* END 950PX MEDIA QUERY *************************************/
