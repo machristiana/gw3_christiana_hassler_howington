@@ -183,7 +183,7 @@ header h2 {
   margin: 120px 30px;
   text-decoration: none;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 24px;
   width: 233px;
   text-align: right;
@@ -194,7 +194,6 @@ header h2 {
 	text-decoration: none!important;
 	padding-bottom: 30px;
 	margin-bottom: 30px;
-	border-bottom: 1px solid #fcf1e7;
 	list-style: none;
 	color: #f0ece8;
 	transition: all 150ms ease;
@@ -227,6 +226,53 @@ header h2 {
 }
 
 /*********************** END HAMBURGER MENU STYLING **********************/
+/*********************** START NAV SPARKLE HOVER STYLING **********************/
+/* https://codepen.io/catheraaine/pen/LRVjdX */
+.sparkle-container {
+	box-sizing: border-box;
+	width: 100%;
+	height: 0;
+	text-align: center;
+}
+
+.sparkle {
+	max-width: 10em;
+	margin: auto auto;
+}
+.sparkle:hover {
+	cursor: pointer;
+}
+
+.u-hover--sparkle {
+	box-sizing: border-box;
+	position: relative;
+	padding: 0.75em;
+}
+.u-hover--sparkle::before, .u-hover--sparkle::after {
+	content: "";
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transform-origin: center;
+}
+.u-hover--sparkle::before {
+	border-top: 0.2em solid rgba(154, 123, 170, 0.9);
+	border-bottom: 0.2em solid rgba(154, 123, 170, 0.9);
+	transform: scale3d(0, 1, 1);
+}
+.u-hover--sparkle::after {
+	border-left: 0.2em solid rgba(154, 123, 170, 0.9);
+	border-right: 0.2em solid rgba(154, 123, 170, 0.9);
+	transform: scale3d(1, 0, 1);
+}
+.u-hover--sparkle:hover::before, .u-hover--sparkle:hover::after {
+	transform: scale3d(1, 1, 1);
+	transition: transform 1700ms;
+}
+/*********************** END NAV SPARKLE HOVER STYLING **********************/
 
 .overlay-container {
 	position: relative;
@@ -425,20 +471,25 @@ article p {
 footer {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	padding: 30px 0;
+	justify-content: flex-start;
+	padding-bottom: 40px;
 }
 
 footer img {
 	max-width: 730px;
-	width: 90%;
-	padding: 5% 5% 5% 10%;
+	width: 85%;
+	padding: 5%;
+}
+
+.footer-flex-image {
+	flex: 1;
 }
 
 .footer-nav {
 	display: block;
 	text-align: center;
-	flex-shrink: .5;
+	flex: 2;
+	padding-right: 15px;
 }
 
 .footer-nav ul li {
@@ -447,12 +498,20 @@ footer img {
 	font-family: 'Averia Serif Libre', cursive;
 	text-transform: uppercase;
 	font-weight: 700;
-	padding: 10px 0;
 }
 
-.footer-nav-ladies,
 .footer-nav-flowers_gents {
 	border-bottom: 1px solid #3e3d3d;
+}
+
+.footer-nav-ladies {
+	padding-bottom: 42px;
+}
+
+.footer-nav-gents {
+	padding-top: 22px;
+	border-top: 1px solid #3e3d3d;
+	display: inline-block;
 }
 
 .footer-nav ul li a {
@@ -464,17 +523,6 @@ footer img {
 	color: black;
 }
 
-
-/************************************* START 380PX MEDIA QUERY *************************************/
-@media (min-width: 380px) {
-	.logo {
-		width: 40%;
-	}
-	.footer-nav ul li {
-		font-size: 1.1rem;
-	}
-}
-/************************************* START 380PX MEDIA QUERY *************************************/
 /************************************* START 500PX MEDIA QUERY *************************************/
 @media (min-width: 500px) {
 	.logo {
@@ -513,27 +561,23 @@ footer img {
     font-size: 1.3rem;
 	}
 
-
-	footer img {
-		max-width: 250px;
-		width: 100%;
-		padding: 5% 0 5% 22%;
-	}
-
 	.footer-nav ul li {
 		font-size: 1.3rem;
 	}
+
+	.footer-nav-ladies {
+		padding-bottom: 52px;
+	}
+
+	.footer-nav-gents {
+		padding-top: 30px;
 }
 /************************************* END 500PX MEDIA QUERY *************************************/
 /************************************* START 600PX MEDIA QUERY *************************************/
 @media (min-width: 600px) {
 	.footer-nav ul li {
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 	}
-
-		footer img {
-			padding-left: 30%
-		}
 }
 /************************************* END 600PX MEDIA QUERY *************************************/
 /************************************* START 750PX MEDIA QUERY *************************************/
@@ -551,7 +595,7 @@ footer img {
 		text-align: center;
 		border-top: 1px solid #3e3d3d;
 		border-bottom: 1px solid #3e3d3d;
-		padding: 20px 0;
+		padding: 40px 0;
 		margin-bottom: 30px;
 	}
 
@@ -571,10 +615,12 @@ footer img {
 	.desktop-nav ul li a {
 		text-decoration: none;
 		color: #3e3d3d;
+		transition: color .5s;
 	}
 
 	.desktop-nav ul li a:hover {
 		color: black;
+		transition: color .5s;
 	}
 
 	.header-container {
@@ -664,6 +710,14 @@ footer img {
 		max-width: 650px;
 		margin: auto;
 	}
+
+	.footer-nav ul li {
+		font-size: 1.8rem;
+	}
+
+	.footer-nav-ladies {
+		padding-bottom: 65px;
+	}
 }
 /************************************* END 750PX MEDIA QUERY *************************************/
 /************************************* START 950PX MEDIA QUERY *************************************/
@@ -685,23 +739,28 @@ footer img {
 
 	.footer-nav {
 		margin: auto;
+		flex: 3;
 	}
 
 	.footer-nav ul {
 		display: flex;
 		border-top: 1px solid #3e3d3d;
 		border-bottom: 1px solid #3e3d3d;
+		padding: 30px 0 55px;
 	}
 
 	.footer-nav ul li {
-		font-size: 1.5rem;
-		padding: 20px 0;
+		font-size: 1.3rem;
+		width: 100%;
+		padding: 0;
 	}
 
-	.footer-nav-ladies,
+	.footer-nav ul li a {
+		width: 100%;
+	}
+
 	.footer-nav-gents {
-		margin-right: 20px;
-		border-bottom: none;
+		border-top: none;
 	}
 }
 

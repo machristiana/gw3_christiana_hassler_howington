@@ -28,7 +28,7 @@ function mouseOutOverlayGents1() {
 
 
 
-// gents 2 - OVERLAY
+// GENTS 2 - OVERLAY
 //Make text appear over image
 document.getElementById("overlay-container-gents2").addEventListener("mouseover", mouseOverQuoteGents2);
 document.getElementById("overlay-container-gents2").addEventListener("mouseout", mouseOutQuoteGents2);
@@ -86,7 +86,7 @@ function mouseOutOverlayGents3() {
 
 
 
-// gents 4 - OVERLAY
+// GENTS 4 - OVERLAY
 //Make text appear over image
 document.getElementById("overlay-container-gents4").addEventListener("mouseover", mouseOverQuoteGents4);
 document.getElementById("overlay-container-gents4").addEventListener("mouseout", mouseOutQuoteGents4);
