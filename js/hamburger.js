@@ -7,6 +7,7 @@ function toggleMenu() {
 	$('.slick-slider').toggleClass('opacity-hide'); // Added this line to hide slider on menu open
 	$('.overlay-container').toggleClass('opacity-hide'); // Added this line to hide images on menu open
 	$('.flowers').toggleClass('opacity-hide'); // Added this line to hide flower images on menu open
+	$('.main-images').toggleClass('opacity-hide'); // Added this line to hide main images (ladies and gents pages) on menu open
 	$('.hamburger-shell').toggleClass('menu-open');
 	var expanded = $('.hamburger-shell').attr('aria-expanded') == true;
 	$('.hamburger-shell').attr('aria-expanded', !expanded);
