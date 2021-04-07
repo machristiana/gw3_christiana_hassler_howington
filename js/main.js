@@ -1,7 +1,7 @@
 // HOMEPAGE 1 - OVERLAY
 //Make link appear over image
-document.getElementById("overlay-container-home1").addEventListener("mouseover", mouseOverQuoteHome1);
-document.getElementById("overlay-container-home1").addEventListener("mouseout", mouseOutQuoteHome1);
+document.getElementById("overlay-container-home1").addEventListener("mouseover", mouseOverLinkHome1);
+document.getElementById("overlay-container-home1").addEventListener("mouseout", mouseOutLinkHome1);
 
 function mouseOverLinkHome1() {
   document.getElementById("ladies-gents-link-home1").style.opacity = "1";

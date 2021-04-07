@@ -5,6 +5,8 @@ function toggleMenu() {
 	$('.bg-cover').toggleClass('reveal');
 	$('.bottom').toggleClass('hide');  //Added this line to toggle the hide class to hide the bottom hamburger button on menu open
 	$('.slick-slider').toggleClass('opacity-hide'); // Added this line to hide slider on menu open
+	$('.overlay-container').toggleClass('opacity-hide'); // Added this line to hide images on menu open
+	$('.flowers').toggleClass('opacity-hide'); // Added this line to hide flower images on menu open
 	$('.hamburger-shell').toggleClass('menu-open');
 	var expanded = $('.hamburger-shell').attr('aria-expanded') == true;
 	$('.hamburger-shell').attr('aria-expanded', !expanded);
