@@ -76,7 +76,7 @@ img {
 }
 
 .logo {
-	max-width: 936px;
+	max-width: 300px;
 	width: 50%;
 }
 
@@ -400,22 +400,16 @@ article p {
 .ladies-main,
 .gents-main {
 	opacity: .5;
-	max-width: 1458px;
-}
-
-.gents-article2 img {
-	max-width: 1738px;
-}
-
-.gents-article3 img {
-	max-width: 1218px;
+	max-width: 1000px;
 }
 
 .home-article2 img,
 .home-article3 img,
 .ladies-article2 img,
-.ladies-article3 img {
-	max-width: 1756px;
+.ladies-article3 img,
+.gents-article2 img,
+.gents-article3 img {
+	max-width: 700px;
 }
 
 .home-flowers-container,
@@ -434,7 +428,7 @@ article p {
 .ladies-flowers,
 .gents-flowers {
 	opacity: .5;
-	max-width: 4161px;
+	max-width: 1000px;
 }
 
 .home-flowers {
@@ -480,7 +474,6 @@ footer {
 }
 
 footer img {
-	max-width: 730px;
 	width: 85%;
 	padding: 5% 5% 5% 15%;
 }
@@ -526,7 +519,7 @@ footer img {
 /************************************* START 425PX MEDIA QUERY *************************************/
 @media (min-width: 425px) {
 	.footer-nav ul li {
-		font-size: 1.1;
+		font-size: 1.1rem;
 	}
 }
 /************************************* END 425PX MEDIA QUERY *************************************/
@@ -570,7 +563,7 @@ footer img {
 	.footer-nav ul li {
 		font-size: 1.3rem;
 	}
-	
+
 	.footer-nav-ladies {
 		padding-bottom: 52px;
 	}
