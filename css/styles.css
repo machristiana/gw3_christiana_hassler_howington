@@ -570,6 +570,17 @@ footer img {
 	.footer-nav ul li {
 		font-size: 1.3rem;
 	}
+<<<<<<< HEAD
+=======
+
+	.footer-nav-ladies {
+		padding-bottom: 52px;
+	}
+
+	.footer-nav-gents {
+		padding-top: 30px;
+	}
+>>>>>>> origin/main
 }
 /************************************* END 500PX MEDIA QUERY *************************************/
 /************************************* START 570PX MEDIA QUERY *************************************/
