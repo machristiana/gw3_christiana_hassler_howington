@@ -183,8 +183,8 @@ header h2 {
   margin: 120px 30px;
   text-decoration: none;
   font-weight: 300;
-  font-size: 1.3rem;
-  width: 240px;
+  font-size: 1.1rem;
+  width: 242px;
   text-align: right;
 	font-family: 'Averia Serif Libre', cursive;
 }
@@ -229,7 +229,7 @@ header h2 {
 	.btn {
 		cursor:pointer;
 		position:relative;
-		padding:10px 20px;
+		padding:10px 10px;
 		/* font-size:28px; */
 		border-top-right-radius:10px;
 		border-bottom-left-radius:10px;
@@ -334,6 +334,16 @@ article h2 {
 	font-size: 1.5rem;
 	font-family: 'Averia Serif Libre', cursive;
 	padding-top: 20px;
+}
+
+.ladies-article1,
+.gents-article1 {
+	padding-top: 0;
+}
+
+.ladies-article1 h2,
+.gents-article1 h2 {
+	padding-top: 0;
 }
 
 article {
@@ -485,13 +495,13 @@ footer img {
 .footer-nav {
 	display: block;
 	text-align: center;
-	flex: 2;
+	flex: 3;
 	padding: 0 15px 0 10px;
 }
 
 .footer-nav ul li {
 	display: inline-block;
-	font-size: .9rem;
+	font-size: .8rem;
 	font-family: 'Averia Serif Libre', cursive;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -516,8 +526,32 @@ footer img {
 .footer-nav ul li a:hover {
 	color: black;
 }
+/************************************* START 380PX MEDIA QUERY *************************************/
+@media (min-width: 380px) {
+	.footer-nav ul li {
+		font-size: .9rem;
+	}
+}
+/************************************* END 380PX MEDIA QUERY *************************************/
+/************************************* START 410PX MEDIA QUERY *************************************/
+@media (min-width: 410px) {
+	.footer-nav {
+		flex: 2;
+	}
+}
+/************************************* END 410PX MEDIA QUERY *************************************/
+/************************************* START 440PX MEDIA QUERY *************************************/
+@media (min-width: 440px) {
+	.footer-nav ul li {
+		font-size: 1rem;
+	}
+}
+/************************************* END 440PX MEDIA QUERY *************************************/
 /************************************* START 500PX MEDIA QUERY *************************************/
 @media (min-width: 500px) {
+	#menu {
+	  font-size: 1.3rem;
+	}
 	.logo {
 		width: 30%;
 	}
