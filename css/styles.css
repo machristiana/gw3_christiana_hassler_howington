@@ -27,6 +27,7 @@ img {
 	min-height: 100vh;
 	margin: 25px;
 	border: #3e3d3d 1px solid;
+	position: relative;
 }
 
 .site-content {
@@ -199,7 +200,6 @@ header h2 {
 
 #menu li:hover {
 	color: #fff;
-	/* padding-right: 3px; */
 }
 
 #menu a {
@@ -224,13 +224,14 @@ header h2 {
 }
 
 /*********************** END HAMBURGER MENU STYLING **********************/
+
+
 /************************ NAV HOVER ANIMATION START **************************/
 /* https://codepen.io/bhautikbharadava/pen/OdPzdW */
 	.btn {
 		cursor:pointer;
 		position:relative;
 		padding:10px 10px;
-		/* font-size:28px; */
 		border-top-right-radius:10px;
 		border-bottom-left-radius:10px;
 		transition:all 1s;
@@ -533,6 +534,8 @@ footer img {
 	}
 }
 /************************************* END 380PX MEDIA QUERY *************************************/
+
+
 /************************************* START 410PX MEDIA QUERY *************************************/
 @media (min-width: 410px) {
 	.footer-nav {
@@ -540,6 +543,8 @@ footer img {
 	}
 }
 /************************************* END 410PX MEDIA QUERY *************************************/
+
+
 /************************************* START 440PX MEDIA QUERY *************************************/
 @media (min-width: 440px) {
 	.footer-nav ul li {
@@ -547,6 +552,8 @@ footer img {
 	}
 }
 /************************************* END 440PX MEDIA QUERY *************************************/
+
+
 /************************************* START 500PX MEDIA QUERY *************************************/
 @media (min-width: 500px) {
 	#menu {
@@ -593,6 +600,8 @@ footer img {
 	}
 }
 /************************************* END 500PX MEDIA QUERY *************************************/
+
+
 /************************************* START 570PX MEDIA QUERY *************************************/
 @media (min-width: 570px) {
 	.overlay {
@@ -600,6 +609,8 @@ footer img {
 	}
 }
 /************************************* END 570PX MEDIA QUERY *************************************/
+
+
 /************************************* START 600PX MEDIA QUERY *************************************/
 @media (min-width: 600px) {
 	.footer-nav ul li {
@@ -607,6 +618,8 @@ footer img {
 	}
 }
 /************************************* END 600PX MEDIA QUERY *************************************/
+
+
 /************************************* START 700PX MEDIA QUERY *************************************/
 @media (min-width: 600px) {
 	.overlay {
@@ -614,6 +627,7 @@ footer img {
 	}
 }
 /************************************* END 700PX MEDIA QUERY *************************************/
+
 
 /************************************* START 750PX MEDIA QUERY *************************************/
 @media (min-width: 750px) {
@@ -764,6 +778,8 @@ footer img {
 	}
 }
 /************************************* END 940PX MEDIA QUERY *************************************/
+
+
 /************************************* START 950PX MEDIA QUERY *************************************/
 @media (min-width: 950px) {
 	.desktop-nav ul li {
@@ -825,6 +841,8 @@ footer img {
 }
 
 /************************************* END 950PX MEDIA QUERY *************************************/
+
+
 /************************************* START 1000PX MEDIA QUERY *************************************/
 @media (min-width: 1000px) {
 	.home-flowers-text-top,
